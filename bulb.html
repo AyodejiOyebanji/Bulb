@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulb.css">
+    <title>Document</title>
+</head>
+<body>
+    <img id="one" src="images/bulboff.gif" alt="" srcset="" style="margin-left: 90px;margin-top: -280px;">
+    
+    <div class="container">
+        <a href="#">
+            <span><button id="btn" onclick="bulb()">ON</button></span>
+        </a>
+
+    </div>
+    <script>
+        function  bulb(){
+            if(btn.innerText ==  "ON"){
+            one.src = "/images/bulbon.gif";
+            btn.innerText = "OFF"  
+            }else{
+                if(btn.innerText == "OFF"){
+                    one.src = "images/bulboff.gif"
+                    btn.innerText = "ON"
+                }
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
